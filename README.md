@@ -24,3 +24,8 @@ This is the reusable eval toolbox that supports the larger portfolio projects.
 
 - Scores: [`reports/eval_recipe_scores.csv`](reports/eval_recipe_scores.csv)
 - Analysis: [`reports/eval_recipe_analysis.md`](reports/eval_recipe_analysis.md)
+
+## Batch Evaluation
+
+`llm_eval_cookbook.batch` adds a small batch runner that normalizes exact-match,
+JSON-schema, and rubric cases into a shared result format.
