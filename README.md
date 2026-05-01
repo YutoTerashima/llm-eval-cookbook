@@ -35,3 +35,8 @@ JSON-schema, and rubric cases into a shared result format.
 The cookbook includes 40 eval records in
 [`datasets/eval_cases.jsonl`](datasets/eval_cases.jsonl), with generated results
 and analysis in [`reports/full_eval_analysis.md`](reports/full_eval_analysis.md).
+
+## Score Reporting
+
+`llm_eval_cookbook.reporting` summarizes score distributions by grader, which is
+useful when turning JSONL eval runs into release notes or model cards.
