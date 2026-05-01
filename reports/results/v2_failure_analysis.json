@@ -1,0 +1,261 @@
+{
+  "total_failure_records": 80,
+  "clusters": [
+    {
+      "cluster": "case",
+      "count": 80
+    }
+  ],
+  "examples": [
+    {
+      "case_id": "case-00000",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.6666666666666666,
+      "rouge_l": 0.6338028169009754,
+      "length_ratio": 0.4639175257731959,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00000",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.672566371681416,
+      "rouge_l": 0.6486486486481969,
+      "length_ratio": 0.5257731958762887,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00001",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.8539325842696629,
+      "rouge_l": 0.7438016528920948,
+      "length_ratio": 0.5921052631578947,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00001",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.7640449438202247,
+      "rouge_l": 0.6324786324781773,
+      "length_ratio": 0.5394736842105263,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00002",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.8292682926829268,
+      "rouge_l": 0.7894736842100485,
+      "length_ratio": 0.6521739130434783,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00002",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.7,
+      "rouge_l": 0.6355140186911307,
+      "length_ratio": 0.5507246376811594,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00003",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.5565217391304348,
+      "rouge_l": 0.3846153846150739,
+      "length_ratio": 0.23809523809523808,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00003",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.8137931034482758,
+      "rouge_l": 0.6666666666662154,
+      "length_ratio": 0.5238095238095238,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00004",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.6881720430107527,
+      "rouge_l": 0.5624999999995957,
+      "length_ratio": 0.391304347826087,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00004",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.75,
+      "rouge_l": 0.6629213483141494,
+      "length_ratio": 0.5478260869565217,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00005",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.7663551401869159,
+      "rouge_l": 0.5325443786978341,
+      "length_ratio": 0.3629032258064516,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00005",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.8333333333333334,
+      "rouge_l": 0.6666666666662091,
+      "length_ratio": 0.5483870967741935,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00006",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.527027027027027,
+      "rouge_l": 0.37656903765659805,
+      "length_ratio": 0.23195876288659795,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00006",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.782608695652174,
+      "rouge_l": 0.6644067796605666,
+      "length_ratio": 0.520618556701031,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00007",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.5849056603773585,
+      "rouge_l": 0.5421686746984,
+      "length_ratio": 0.371900826446281,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00007",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.7049180327868853,
+      "rouge_l": 0.6559139784941689,
+      "length_ratio": 0.5371900826446281,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00008",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.9041095890410958,
+      "rouge_l": 0.9278350515458943,
+      "length_ratio": 0.8653846153846154,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00008",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.676923076923077,
+      "rouge_l": 0.624999999999545,
+      "length_ratio": 0.5384615384615384,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00009",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.5454545454545454,
+      "rouge_l": 0.49999999999951383,
+      "length_ratio": 0.7142857142857143,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00010",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.6779661016949152,
+      "rouge_l": 0.6338028169009754,
+      "length_ratio": 0.4639175257731959,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00010",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.6666666666666666,
+      "rouge_l": 0.6442953020129684,
+      "length_ratio": 0.5360824742268041,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00011",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.6290322580645161,
+      "rouge_l": 0.505617977527712,
+      "length_ratio": 0.3383458646616541,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00011",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.7552447552447552,
+      "rouge_l": 0.6368159203975622,
+      "length_ratio": 0.5112781954887218,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00012",
+      "style": "compressed_reference",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.8,
+      "rouge_l": 0.7438016528920948,
+      "length_ratio": 0.5921052631578947,
+      "rubric": 1.0
+    },
+    {
+      "case_id": "case-00012",
+      "style": "noisy_answer",
+      "answerable": true,
+      "exact": 0.0,
+      "token_f1": 0.7368421052631579,
+      "rouge_l": 0.6610169491520839,
+      "length_ratio": 0.5526315789473685,
+      "rubric": 1.0
+    }
+  ]
+}

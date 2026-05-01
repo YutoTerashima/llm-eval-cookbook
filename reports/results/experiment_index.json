@@ -1,0 +1,68 @@
+{
+  "title": "LLM Eval Cookbook V2",
+  "kind": "eval_methods",
+  "dataset_path": "data/processed/rag_cases.jsonl",
+  "profile": "full",
+  "generated_at": "2026-05-02 08:09:39",
+  "git_commit": "4d19b51",
+  "device": {
+    "requested_device": "cuda",
+    "actual_device": "cuda",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8"
+  },
+  "results": [
+    {
+      "experiment_id": "compressed_reference",
+      "exact": 0.2078,
+      "token_f1": 0.7595776039799929,
+      "rouge_l": 0.6995030295452068,
+      "rubric": 0.8316,
+      "length_ratio": 0.5873106405548523
+    },
+    {
+      "experiment_id": "exact_reference",
+      "exact": 1.0,
+      "token_f1": 1.0,
+      "rouge_l": 0.9999999999995,
+      "rubric": 0.893,
+      "length_ratio": 1.0
+    },
+    {
+      "experiment_id": "extractive_context",
+      "exact": 0.0,
+      "token_f1": 0.22325783090541046,
+      "rouge_l": 0.12821844997874898,
+      "rubric": 0.0504,
+      "length_ratio": 0.7253590780362302
+    },
+    {
+      "experiment_id": "generic_refusal",
+      "exact": 0.0,
+      "token_f1": 0.106762623492898,
+      "rouge_l": 0.06974030304327142,
+      "rubric": 0.0006,
+      "length_ratio": 0.12589307386676618
+    },
+    {
+      "experiment_id": "noisy_answer",
+      "exact": 0.0,
+      "token_f1": 0.6968977173050462,
+      "rouge_l": 0.6410173297919011,
+      "rubric": 0.8922,
+      "length_ratio": 0.5565919086005062
+    }
+  ],
+  "artifacts": [
+    "reports\\results\\v2_eval_method_scores.csv",
+    "reports\\results\\v2_metric_correlation.csv",
+    "reports\\results\\v2_metric_disagreements.json",
+    "reports\\figures\\v2_metric_correlation.png",
+    "reports\\figures\\v2_metric_token_f1.png",
+    "reports\\figures\\v2_rubric_score.png"
+  ],
+  "discussion": "Evaluation methods disagree for understandable reasons. V2 turns that disagreement into a diagnostic artifact rather than hiding it behind a single aggregate score.",
+  "total_runtime_seconds": 22.165
+}

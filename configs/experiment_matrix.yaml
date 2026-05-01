@@ -1,0 +1,33 @@
+{
+  "kind": "eval_methods",
+  "title": "LLM Eval Cookbook V2",
+  "report": "llm_eval_cookbook_v2_research_report.md",
+  "dataset_path": "data/processed/rag_cases.jsonl",
+  "max_rows_full": 5000,
+  "max_rows_smoke": 300,
+  "experiments": [
+    {
+      "id": "exact_match",
+      "method": "exact"
+    },
+    {
+      "id": "token_f1_rouge",
+      "method": "lexical"
+    },
+    {
+      "id": "embedding_lsa_similarity",
+      "method": "lsa"
+    },
+    {
+      "id": "answerability_rubric",
+      "method": "rubric"
+    }
+  ],
+  "ablations": [
+    "prediction_style",
+    "answerability",
+    "length_bias",
+    "metric_disagreement"
+  ],
+  "discussion": "Evaluation methods disagree for understandable reasons. V2 turns that disagreement into a diagnostic artifact rather than hiding it behind a single aggregate score."
+}
