@@ -40,3 +40,9 @@ and analysis in [`reports/full_eval_analysis.md`](reports/full_eval_analysis.md)
 
 `llm_eval_cookbook.reporting` summarizes score distributions by grader, which is
 useful when turning JSONL eval runs into release notes or model cards.
+## Real Public Dataset Experiment
+
+The cookbook now includes `datasets/external/rag_eval_cookbook_cases.jsonl`, derived from
+[aizip/Rag-Eval-Dataset-6k](https://huggingface.co/datasets/aizip/Rag-Eval-Dataset-6k). These are
+real answerability and grounding cases used to test exact-match, rubric, abstention, and regression
+evaluation recipes.
