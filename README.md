@@ -29,3 +29,9 @@ This is the reusable eval toolbox that supports the larger portfolio projects.
 
 `llm_eval_cookbook.batch` adds a small batch runner that normalizes exact-match,
 JSON-schema, and rubric cases into a shared result format.
+
+## Full Eval Dataset
+
+The cookbook includes 40 eval records in
+[`datasets/eval_cases.jsonl`](datasets/eval_cases.jsonl), with generated results
+and analysis in [`reports/full_eval_analysis.md`](reports/full_eval_analysis.md).
