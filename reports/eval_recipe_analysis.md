@@ -1,0 +1,17 @@
+# Eval Recipe Analysis
+
+The cookbook includes deterministic graders for high-confidence checks and
+score-style graders for subjective criteria. The result table illustrates where
+uncertainty enters the evaluation stack.
+
+| task | score | ci_low | ci_high |
+| --- | --- | --- | --- |
+| exact_match | 1.0 | 1.0 | 1.0 |
+| json_schema | 0.92 | 0.84 | 0.98 |
+| rubric_grounding | 0.76 | 0.62 | 0.88 |
+| pairwise_preference | 0.68 | 0.55 | 0.8 |
+
+## Interpretation
+
+Exact checks have narrow uncertainty. Rubric and preference scores require more
+samples, human calibration, or model-judge agreement checks.

@@ -19,3 +19,8 @@ principles and extension ideas.
 ## Portfolio Notes
 
 This is the reusable eval toolbox that supports the larger portfolio projects.
+
+## Experiment Artifacts
+
+- Scores: [`reports/eval_recipe_scores.csv`](reports/eval_recipe_scores.csv)
+- Analysis: [`reports/eval_recipe_analysis.md`](reports/eval_recipe_analysis.md)
