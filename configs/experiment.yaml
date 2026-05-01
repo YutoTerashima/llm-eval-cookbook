@@ -1,0 +1,9 @@
+{
+  "kind": "eval_methods",
+  "dataset": "aizip/Rag-Eval-Dataset-6k",
+  "config": "default",
+  "split": "train",
+  "report": "llm_eval_methods_real_data_report.md",
+  "title": "LLM Eval Methods Real Data Report",
+  "description": "Exact, lexical, embedding, and rubric-style metrics on real RAG evaluation rows."
+}

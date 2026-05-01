@@ -46,3 +46,18 @@ The cookbook now includes `datasets/external/rag_eval_cookbook_cases.jsonl`, der
 [aizip/Rag-Eval-Dataset-6k](https://huggingface.co/datasets/aizip/Rag-Eval-Dataset-6k). These are
 real answerability and grounding cases used to test exact-match, rubric, abstention, and regression
 evaluation recipes.
+
+## GPU-Backed Real Experiment
+
+This repository now includes a reproducible GPU-backed experiment using `aizip/Rag-Eval-Dataset-6k`.
+The smoke path runs on the local RTX 5090 Laptop GPU through the `Transformers` conda
+environment and writes metrics, figures, and a markdown report.
+
+```powershell
+conda run -n Transformers python scripts/download_data.py --smoke
+conda run -n Transformers python scripts/preprocess_data.py --max-samples 384
+conda run -n Transformers python scripts/run_experiment.py --device cuda --smoke
+conda run -n Transformers python scripts/make_report.py
+```
+
+Main report: `reports/llm_eval_methods_real_data_report.md`.
