@@ -63,15 +63,62 @@ conda run -n Transformers python scripts/make_report.py
 Main report: `reports/llm_eval_methods_real_data_report.md`.
 
 <!-- V2_RESEARCH_UPGRADE -->
-## Publishable V2 Research Upgrade
+## Publishable V2 Research Results
 
-This repository now includes a project-level V2 experiment suite:
+This repository now includes a full V2 research suite with real data, multiple baselines, ablations, result artifacts, figures, and failure analysis. The README summarizes the measured run so the project can be judged from results, not just project intent.
 
-- Reproducible matrix: `configs/experiment_matrix.yaml`
-- Main runner: `scripts/run_matrix.py --device cuda --profile full`
-- Failure analysis: `scripts/analyze_failures.py`
-- Research report: `reports/llm_eval_cookbook_v2_research_report.md`
-- Experiment index: `reports/results/experiment_index.json`
+### Dataset And Scale
 
-The V2 artifacts include multiple experiments, ablations, figures, failure cases, and a discussion section while keeping raw caches and large checkpoints out of Git.
+RED6k full processed split with 5,978 real RAG evaluation cases, transformed into answer-style comparisons for metric diagnostics.
 
+- Full-profile result rows: `5`
+- Experiment profile: `full`
+- Experiment index: [`reports/results/experiment_index.json`](reports/results/experiment_index.json)
+- Full report: [`reports/llm_eval_cookbook_v2_research_report.md`](reports/llm_eval_cookbook_v2_research_report.md)
+
+### Main Results
+
+| experiment_id | exact | token_f1 | rouge_l | rubric | length_ratio |
+| --- | --- | --- | --- | --- | --- |
+| compressed_reference | 0.2078 | 0.7596 | 0.6995 | 0.8316 | 0.5873 |
+| exact_reference | 1.0000 | 1.0000 | 1.0000 | 0.8930 | 1.0000 |
+| extractive_context | 0.0000 | 0.2233 | 0.1282 | 0.0504 | 0.7254 |
+| generic_refusal | 0.0000 | 0.1068 | 0.0697 | 0.0006 | 0.1259 |
+| noisy_answer | 0.0000 | 0.6969 | 0.6410 | 0.8922 | 0.5566 |
+
+### Analysis
+
+- Exact match is intentionally brittle: compressed and noisy answers score 0 exact while retaining high token-F1/ROUGE and rubric scores.
+- Extractive context responses show the opposite failure: they can contain overlapping words but fail the answerability rubric.
+- The disagreement casebook makes metric failure modes inspectable, so users can choose metrics based on task risk rather than habit.
+- The cookbook now behaves as an evaluation-method comparison project, not just a bag of scoring snippets.
+
+### Failure Analysis
+
+- `case`: 80 records
+
+The public failure artifacts use redacted previews or structured metadata where source examples may contain harmful, private, or otherwise sensitive text. This keeps the analysis reproducible without turning the README into a prompt-injection or unsafe-content corpus.
+
+### Key Artifacts
+
+- [`reports/results/v2_eval_method_scores.csv`](reports/results/v2_eval_method_scores.csv)
+- [`reports/results/v2_metric_correlation.csv`](reports/results/v2_metric_correlation.csv)
+- [`reports/results/v2_metric_disagreements.json`](reports/results/v2_metric_disagreements.json)
+- [`reports/figures/v2_metric_correlation.png`](reports/figures/v2_metric_correlation.png)
+- [`reports/figures/v2_metric_token_f1.png`](reports/figures/v2_metric_token_f1.png)
+- [`reports/figures/v2_rubric_score.png`](reports/figures/v2_rubric_score.png)
+
+Figures:
+
+- [`reports/figures/v2_metric_correlation.png`](reports/figures/v2_metric_correlation.png)
+- [`reports/figures/v2_metric_token_f1.png`](reports/figures/v2_metric_token_f1.png)
+- [`reports/figures/v2_rubric_score.png`](reports/figures/v2_rubric_score.png)
+
+### Reproduction
+
+```powershell
+conda run -n Transformers python scripts/run_matrix.py --device cuda --profile full
+conda run -n Transformers python scripts/analyze_failures.py
+conda run -n Transformers python scripts/make_report.py
+conda run -n Transformers python -m pytest
+```
