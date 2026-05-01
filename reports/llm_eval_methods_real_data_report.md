@@ -28,7 +28,7 @@ conda run -n Transformers python scripts/make_report.py
 ```json
 {
   "dataset": "aizip/Rag-Eval-Dataset-6k",
-  "rows": 384,
+  "rows": 3000,
   "device": {
     "requested_device": "cuda",
     "actual_device": "cuda",
@@ -37,9 +37,9 @@ conda run -n Transformers python scripts/make_report.py
     "torch_version": "2.10.0+cu128",
     "cuda_runtime": "12.8"
   },
-  "mean_exact": 0.0,
-  "mean_lexical_overlap": 0.7582,
-  "correlation": NaN
+  "mean_exact": 0.0017,
+  "mean_lexical_overlap": 0.7598,
+  "correlation": 0.0604
 }
 ```
 
