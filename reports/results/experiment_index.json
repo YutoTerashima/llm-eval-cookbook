@@ -53,6 +53,12 @@
       "rouge_l": 0.6410173297919011,
       "rubric": 0.8922,
       "length_ratio": 0.5565919086005062
+    },
+    {
+      "experiment_id": "top_tier_review_gate",
+      "artifact_count": 6,
+      "coverage_score": 1.0,
+      "review_value": "evidence-backed claims, artifact provenance, reproducibility manifest, and strict audit gate"
     }
   ],
   "artifacts": [
@@ -61,7 +67,13 @@
     "reports\\results\\v2_metric_disagreements.json",
     "reports\\figures\\v2_metric_correlation.png",
     "reports\\figures\\v2_metric_token_f1.png",
-    "reports\\figures\\v2_rubric_score.png"
+    "reports\\figures\\v2_rubric_score.png",
+    "docs/top_tier_reviewer_packet.md",
+    "reports/results/claim_evidence_matrix.csv",
+    "reports/results/artifact_manifest.json",
+    "reports/results/reproducibility_manifest.json",
+    "reports/results/top_tier_quality_gate.json",
+    "reports/figures/top_tier_review_scores.png"
   ],
   "discussion": "Evaluation methods disagree for understandable reasons. V2 turns that disagreement into a diagnostic artifact rather than hiding it behind a single aggregate score.",
   "total_runtime_seconds": 22.165

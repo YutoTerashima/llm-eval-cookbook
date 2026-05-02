@@ -1,0 +1,441 @@
+{
+  "repo": "llm-eval-cookbook",
+  "generated_at_utc": "2026-05-02T07:25:23.306274+00:00",
+  "git_commit": "bae32fa",
+  "artifacts": [
+    {
+      "path": "configs/experiment.yaml",
+      "kind": "configuration",
+      "size_bytes": 322,
+      "sha256": "01b41de37b01778c60324d280352faa58d2885439d6336a70a9ec40880b731af",
+      "review_use": "experiment or model configuration"
+    },
+    {
+      "path": "configs/experiment_matrix.yaml",
+      "kind": "configuration",
+      "size_bytes": 855,
+      "sha256": "16dc9f6d238ec7614accdad2fa933c4ff613424be273c5a80ebcdd170ad7bb1f",
+      "review_use": "experiment or model configuration"
+    },
+    {
+      "path": "reports/figures/eval_method_distribution.png",
+      "kind": "figure",
+      "size_bytes": 27206,
+      "sha256": "2c36218e4d87632f085a3f957b87dcf22c2b997eba1e671539f252bed795a3c5",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/top_tier_review_scores.png",
+      "kind": "figure",
+      "size_bytes": 45792,
+      "sha256": "0dde3ef73d4977ce17014f76e381e9a7c8e2f953c285880721b73a636168433c",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_metric_correlation.png",
+      "kind": "figure",
+      "size_bytes": 54445,
+      "sha256": "4da48b471580c167148b567b7c260ab45c95d4f98dde4fb1de1392f7b72cea88",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_metric_token_f1.png",
+      "kind": "figure",
+      "size_bytes": 65854,
+      "sha256": "57896bc849851eb969b8057d0d1bc501ee7506a2eac707b9fb8effa292b23773",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_rubric_score.png",
+      "kind": "figure",
+      "size_bytes": 66419,
+      "sha256": "43ef632224fbbb89bb30432dfd3d595fd4e37d98e96ba92ec41323e876a48989",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/eval_recipe_scores.csv",
+      "kind": "metric_table",
+      "size_bytes": 148,
+      "sha256": "a9c565a749ca412f32d6a76ee6f8972e8b1b96d5613d87e03ba67f4df5522296",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/full_eval_results.csv",
+      "kind": "metric_table",
+      "size_bytes": 1155,
+      "sha256": "73f3f7453856f9966bba9ed2c8dcc898e3fae24073e97b098c40f139ea0d12a1",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/results/claim_evidence_matrix.csv",
+      "kind": "metric_table",
+      "size_bytes": 1484,
+      "sha256": "e92d44967d8aa1aed12cdb058f3a678b9c3f1ad26788c66f53ed7efd68ff503b",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/eval_method_scores.csv",
+      "kind": "metric_table",
+      "size_bytes": 101195,
+      "sha256": "220c49e43afea4b3f4c7c592c7aa5b4924339a3c7c6196640eb028d18a7e25ea",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_eval_method_scores.csv",
+      "kind": "metric_table",
+      "size_bytes": 460,
+      "sha256": "b6dd8ac361266bb90d7d30f702709582755929bac9cce327af77e87d27359ca7",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_metric_correlation.csv",
+      "kind": "metric_table",
+      "size_bytes": 489,
+      "sha256": "9a6a65009ff469b4e84f1c6bae182473c0ffce4adef7f0e8011b1ca65c8f38ea",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "other",
+      "size_bytes": 414,
+      "sha256": "7c5f623274e47061abbed1f2c8a0e7c2656f8bedd0633b828ccb2c0e9e071b5e",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "README.md",
+      "kind": "report_or_docs",
+      "size_bytes": 7140,
+      "sha256": "6322d8e5034cd368dfda5107261eef9be3eca241a3d52ae551aaea45437f25ba",
+      "review_use": "first-screen reviewer orientation"
+    },
+    {
+      "path": "docs/design.md",
+      "kind": "report_or_docs",
+      "size_bytes": 87,
+      "sha256": "bd8b5db9e90ca6b15d538fe7e9e829ae407e76583cbcdb758f1f27591f2c9063",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "docs/research_brief.md",
+      "kind": "report_or_docs",
+      "size_bytes": 563,
+      "sha256": "0bd1cd76bfe98b32817120e39876416f3c2cf0239899be29cbe4dec2425bb26a",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "docs/top_tier_reviewer_packet.md",
+      "kind": "report_or_docs",
+      "size_bytes": 3535,
+      "sha256": "6a6a2c47b1382794cac0b69968022953d45a43d2fb041a2f17a605d8d63c9af7",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/eval_recipe_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 618,
+      "sha256": "dd931ba96154595f90b97858ebd238866988c7d90005a8876f6d37830b1a3bbf",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/full_eval_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 932,
+      "sha256": "a75f61b5df6f1aefe74a64249f8a62e643d784ee8ed773abb76d59880cf2f69a",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/llm_eval_cookbook_v2_research_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 6140,
+      "sha256": "a258a2a5a29d2318c0f120c21dbe80de07c02bd6a830b02990fe71d868c908f0",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/llm_eval_methods_real_data_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 1701,
+      "sha256": "aefe071c2fbf0365a7029766d4a66f65f773812f8f072e45c6a2d82b094ff206",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/maturity_review.md",
+      "kind": "report_or_docs",
+      "size_bytes": 6698,
+      "sha256": "5491086238d8b21e7d5a532a4e0ae4d6ede95f7fd867b9ecf4ab928255793552",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/real_rag_eval_cookbook_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 631,
+      "sha256": "ce167c9b0ae18fb501b6383487a22fb236bc5411e7c32aebada04bed9b0433f7",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/recipe_index.md",
+      "kind": "report_or_docs",
+      "size_bytes": 101,
+      "sha256": "fe7db5212482758d7e90ad872c6dea58f36ead8e5244fe9c9548ac3df8bf52a6",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "scripts/analyze_failures.py",
+      "kind": "source_or_test",
+      "size_bytes": 1454,
+      "sha256": "73bc120f9b39bca7127b96cc30710529a0c277a888cbcf7ab1aaff7c40bd0b09",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/download_data.py",
+      "kind": "source_or_test",
+      "size_bytes": 284,
+      "sha256": "0fd00697a41c45db310f463dd8f5967d3e749c657a6985c578b0ee43837dbd96",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/gpu_experiment.py",
+      "kind": "source_or_test",
+      "size_bytes": 31340,
+      "sha256": "37b2eeade55e59da7b77ab557acc72a3f68fb4746220f136d7039d8281cc5a66",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/make_report.py",
+      "kind": "source_or_test",
+      "size_bytes": 3469,
+      "sha256": "f67806488b727a69a782bc723859362850baf512a7b45c7ee04e3e598bedab62",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/preprocess_data.py",
+      "kind": "source_or_test",
+      "size_bytes": 223,
+      "sha256": "6295125239bb4992208c6613fae4c6af1325bb2e34c03b52cc653de13aed7fbf",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "kind": "source_or_test",
+      "size_bytes": 82,
+      "sha256": "20850eb44719474b29842436f5b147604f2ceaf5b8356cf6630b164da63d3792",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/run_matrix.py",
+      "kind": "source_or_test",
+      "size_bytes": 40862,
+      "sha256": "883126afc52d318b5db78ecb685adc8f2545cc7f7567b55391db241f190b858d",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "src/llm_eval_cookbook/__init__.py",
+      "kind": "source_or_test",
+      "size_bytes": 26,
+      "sha256": "ab42a4f36f58ae37318c7ed5f375bd636d6ef3152b07ffde4325f009010d0a33",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/batch.py",
+      "kind": "source_or_test",
+      "size_bytes": 977,
+      "sha256": "15ba8d3fcb5d4006029513f0a500ef0b69f4a25047db2ac91ec999449977f479",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/disagreement.py",
+      "kind": "source_or_test",
+      "size_bytes": 2535,
+      "sha256": "799d770d37798c1bd5935d220a3c518b1f8582a55182280582a97e8af3129633",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/graders.py",
+      "kind": "source_or_test",
+      "size_bytes": 781,
+      "sha256": "18c5ef75fb7d28e275b557df20dca2e41a712c13052fc9995630968280660255",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/metric_suite.py",
+      "kind": "source_or_test",
+      "size_bytes": 2528,
+      "sha256": "ec32de8fb3abca0cc931f466a460ff8d46ff7beb0f45489db7c392dbffb174d0",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/recommendations.py",
+      "kind": "source_or_test",
+      "size_bytes": 2541,
+      "sha256": "37d6664b7be0d5220336bfe27638dc4f6bce6fffaa43e6326352f9e2aafefa08",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/reporting.py",
+      "kind": "source_or_test",
+      "size_bytes": 455,
+      "sha256": "db50f56e2f9589787bb09a984b87f8b613c940e1b9eead4a3e807640ba363027",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/research_report.py",
+      "kind": "source_or_test",
+      "size_bytes": 1431,
+      "sha256": "b652b2e8cc9fc6955c4190d7e0045b3f33119fa56578f2a9acb11a4616d2360f",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/statistics.py",
+      "kind": "source_or_test",
+      "size_bytes": 635,
+      "sha256": "e6e986464f81bcbf1d637d908276264759a5e394cfdc0347cf74d0826ab853e1",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/llm_eval_cookbook/suite.py",
+      "kind": "source_or_test",
+      "size_bytes": 584,
+      "sha256": "750c9e30821da2b2f4b4b317eff139e48027e6bf9f32ccd991916812cbb841d1",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "source_or_test",
+      "size_bytes": 123,
+      "sha256": "0002b5341b19e442565f99ea21759c27046cf13b6c7f9def582f0f383471a5f5",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_batch.py",
+      "kind": "source_or_test",
+      "size_bytes": 193,
+      "sha256": "960602e9c91e075a393c211e88157636e5a8d1bca01d85ccedc2e85f66339ead",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_graders.py",
+      "kind": "source_or_test",
+      "size_bytes": 327,
+      "sha256": "09b95e930ad29af84fe593b180fe6b4523941177d66de3bccb6522d7bc6d8f50",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_maturity_assets.py",
+      "kind": "source_or_test",
+      "size_bytes": 930,
+      "sha256": "6dc9a8db2044eb1f11a3771708ff9c21e5694fbbf43089fc64caf653745c0e7c",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_real_experiment_artifacts.py",
+      "kind": "source_or_test",
+      "size_bytes": 1187,
+      "sha256": "7ada364b78f2151dbcd3ef56e72510e52451c83b3642efa5d33647539b28949e",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_real_rag_cookbook_cases.py",
+      "kind": "source_or_test",
+      "size_bytes": 405,
+      "sha256": "babc3fd183e6c73c051e001feb8d3e0db43542eed7177c1b4d2371632096fc8f",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_reporting.py",
+      "kind": "source_or_test",
+      "size_bytes": 220,
+      "sha256": "05b3ebabce80be37e5cebeee97cb6a90bdf5ae5baaee5d6c773614f33174a390",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_statistics.py",
+      "kind": "source_or_test",
+      "size_bytes": 214,
+      "sha256": "837479630bc085a843bffdc10d558267d88e804d22b2a1422c234cf1d79421c2",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_suite.py",
+      "kind": "source_or_test",
+      "size_bytes": 208,
+      "sha256": "32b10d5a982c4c119b6f687ecc69b33ddc4eec59dbebe7872853ae0b17e3af0f",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_top_tier_quality_gate.py",
+      "kind": "source_or_test",
+      "size_bytes": 1942,
+      "sha256": "ef892c5898daa21756e3ce7620a2d9d09023d7ecfc7f93b73cd086df91ff9859",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_v2_research_artifacts.py",
+      "kind": "source_or_test",
+      "size_bytes": 1489,
+      "sha256": "c0b5d5fa3d6744af99ff7ee8d844df24f340518b59a010b68514ac0709be1d10",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "reports/real_rag_eval_cookbook_analysis.json",
+      "kind": "structured_result",
+      "size_bytes": 263,
+      "sha256": "d8f69961ea615bb23cde51f0e731d03c2f30299b1faf7b1093710843ce57751e",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/results/artifact_manifest.json",
+      "kind": "structured_result",
+      "size_bytes": 16106,
+      "sha256": "f12db30d115346358421a5c50fe403b962be2465fb218c3a4913eb871857e8b6",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/eval_method_summary.json",
+      "kind": "structured_result",
+      "size_bytes": 383,
+      "sha256": "64c9ce2d88c46288b21ff3f2948e6a9614b08df641cd068d261568988711a966",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/experiment_index.json",
+      "kind": "structured_result",
+      "size_bytes": 2641,
+      "sha256": "305e903871370ab67d76e13a44f206773f3437b4a182afba15daaeea17943009",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/reproducibility_manifest.json",
+      "kind": "structured_result",
+      "size_bytes": 1408,
+      "sha256": "5ccc959e119cd82b8e6c4f784f33b89339128aecd13ba34dbd1e469c4a02ac16",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/top_tier_quality_gate.json",
+      "kind": "structured_result",
+      "size_bytes": 637,
+      "sha256": "d3814f576cd2c3964b7787def866e21dad983f31ca6d3d6458cd928c7b399b20",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_failure_analysis.json",
+      "kind": "structured_result",
+      "size_bytes": 6885,
+      "sha256": "5c8849f65bdd2aed6d1a3e44339f0046db75963750f060965e887196b69d9330",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_metric_disagreements.json",
+      "kind": "structured_result",
+      "size_bytes": 19931,
+      "sha256": "65b2867a98bff5a3e833f6ed609ef853921cafd5495de38be9d9b401f58a68d4",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "notebooks/maturity_walkthrough.ipynb",
+      "kind": "walkthrough_or_notebook",
+      "size_bytes": 2108,
+      "sha256": "61ff8220686c3eb3b3a6bd3adcec301f13fffd6ce89968686939952544e2ed80",
+      "review_use": "walkthrough or original notebook evidence"
+    }
+  ]
+}

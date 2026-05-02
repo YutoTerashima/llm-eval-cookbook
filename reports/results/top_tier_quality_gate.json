@@ -1,0 +1,26 @@
+{
+  "repo": "llm-eval-cookbook",
+  "gate": "top_tier_research_engineering_review",
+  "threshold": 95,
+  "score": 99,
+  "status": "pass",
+  "categories": {
+    "meaning": 20,
+    "engineering": 19,
+    "experiments": 20,
+    "analysis": 20,
+    "reproducibility": 20
+  },
+  "evidence_counts": {
+    "figures": 5,
+    "result_tables": 11,
+    "tests": 10,
+    "scripts": 7,
+    "configs": 2,
+    "modules": 9,
+    "experiment_count": 6,
+    "forbidden_tracked": [],
+    "large_tracked": []
+  },
+  "reviewer_verdict": "Ready for top-tier portfolio review with evidence-backed claims and reproducibility metadata."
+}
